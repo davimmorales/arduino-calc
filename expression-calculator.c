@@ -4,12 +4,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define STACK_SIZE 100
+#define STACK_SIZE 15
 
 /* globals */
 int stack[STACK_SIZE];
 int top;
-
 
 /* prototypes */
 void empty(void);
@@ -23,7 +22,6 @@ void exit_stack_overflow(void);
 void exit_stack_underflow(void);
 void exit_number_too_big(void);
 void warn_incomplete_expression(void);
-
 
 void empty(void){
   top = 0;
